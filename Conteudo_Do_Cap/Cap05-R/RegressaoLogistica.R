@@ -5,13 +5,13 @@
 # https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
 
 # Definindo o diretório de trabalho
-setwd("~/Dropbox/DSA/MachineLearning2.0/Cap05/R")
+setwd("/home/eduardo/Desktop/DataScience/CienciaDeDados/4.Machine-Learning/2.Machine_Learning_-_Regressao/Conteudo_Do_Cap/Cap06-R")
 getwd()
 
 # Instalando os pacotes
-install.packages("caret")
-install.packages("ROCR")
-install.packages("e1071")
+#install.packages("caret")
+#install.packages("ROCR")
+#install.packages("e1071")
 
 # Carregando os pacotes
 library(caret)
@@ -19,7 +19,7 @@ library(ROCR)
 library(e1071) 
 
 # Carregando o dataset um um dataframe
-credito_dataset <- read.csv("credit_dataset_final.csv", header = TRUE, sep = ",")
+credito_dataset <- read.csv("Smarket.csv", header = TRUE, sep = ",")
 head(credito_dataset)
 summary(credito_dataset)
 str(credito_dataset)
